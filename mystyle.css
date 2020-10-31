@@ -1,32 +1,92 @@
 body {
     font-size: 16px;
-    background: darkslategray;
+    background-color: rgb(3, 37, 37);
     font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+   
     }
 
     nav{
-        background-color: whitesmoke;
+        background-color: darkslategray;
         width:100%;
-    }
-    h1{
-        color: white;
-        
+       
+        text-align: center;
 
     }
-    footer{
-        background-color: white;
+
+    p{
+        color: white;
+        text-align: center;
+    }
+   
+
+   #content{
+
+   
+       font-size: 25px;
+       margin: 5% 10%;
+       color: white ;
+       background-color: rgb(3, 37, 37);
+       text-align: center;
        
-        margin: 50px auto 0;
+   }
+    h3{
+        color: white;
+        text-align: center;
+        font-size: 40px;
+        margin-top: 10px;
+        background-color: rgb(3, 37, 37);
+        
+        
+      
+    }
+    #edit{
+        font-size: 10px;
+        padding: 1%;
+        color: white;
+    }
+    #delete{
+        font-size: 10px;
+        color: white;
+      
+    }
+
+    #moreBlogs{
+        text-align: center;
+        padding-left: 500px;
+      
+    }
+    img{
+        padding-top: 50px;
+       padding-left: 475px; 
+    align: center;
+    }
+   
+    footer{
+        background-color: rgb(3, 37, 37);
+       color: white;
+        margin: 50px auto auto;
+        
     }
 
   
-     a{
+     nav a{
         text-align: center;
         font-size: x-large;
-        padding: 9%;
-       color: darkslategray;
-       
+        padding: 5%;
+       color: white;
+      
     }
+
+    #blogcontent{
+        padding-top: 200px;
+    }
+  
+    #blogHead{
+        margin-top: 50px;
+        color: white;
+        text-align: center;
+    }
+   
     h2 {
     text-align: center;
     text-decoration: underline;
@@ -34,7 +94,7 @@ body {
     }
     form {
     width: 300px;
-    background:darkslategray;
+    background:rgb(3, 37, 37);
     padding: 15px 40px 40px;
     border: 1px solid #ccc;
     margin: 50px auto 0;
@@ -57,6 +117,20 @@ body {
     width: 100%;
     box-sizing: border-box;
     border-radius: 2px;
+    }
+
+    #free{
+        color: white;
+        text-align: center;
+        padding: 1%;
+        font-size: 30px;
+    }
+    #inputM{
+        height: 100px;
+        text-align: left;
+        text-orientation: sideways;
+        width: 100%;
+       
     }
     .row {
     padding-bottom: 10px;

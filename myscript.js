@@ -2,17 +2,39 @@ function printError(element, msg) {
     document.getElementById(element).innerHTML = msg;
 }
 
+function moreBlogs()
+{
+    alert("More Blogs will be shown");
+}
+function editBlog()
+{
+    alert("Edit Blog will be opened");
+}
 
+function openReading()
+{
+    alert("Opens the complete blog");
+}
+
+function deleteBlog()
+{
+    if(confirm("Do you want to delete the blog?")){
+        alert("Blog is deleted.")
+    }
+    else{
+        alert("You have selected to keep the blog!")
+    }
+}
 function validateForm() {
 
     // Retrieving the values of form elements 
     var name = document.contactForm.name.value;
     var email = document.contactForm.email.value;
     var mobile = document.contactForm.mobile.value;
-   
+   var message=document.contactForm.message.value;
    
 
-    var nameErr = emailErr = true;
+    var nameErr = emailErr =messageErr= true;
 
     // Validate name
     if (name == "") {
@@ -41,7 +63,17 @@ function validateForm() {
         }
     }
 
-    if (nameErr || emailErr == true) {
+    //validate message
+    if(message.length <20)
+    {
+        printError("messageErr", "Minimum 20 characters needed.");
+    }
+    else{
+        messageErr=false;
+    }
+
+
+    if (nameErr || emailErr ||messageErr == true) {
         return false;
     } else {
         alert('You have submitted the form..')
